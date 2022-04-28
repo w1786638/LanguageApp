@@ -37,7 +37,7 @@ public class TeacherLoginPanel extends javax.swing.JFrame {
         jPasswordField1 = new javax.swing.JPasswordField();
         teacherSignUpBtn = new javax.swing.JButton();
         loginBtn = new javax.swing.JButton();
-        teacherForgetPassword = new javax.swing.JButton();
+        teacherForgetPasswordBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -75,11 +75,11 @@ public class TeacherLoginPanel extends javax.swing.JFrame {
             }
         });
 
-        teacherForgetPassword.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        teacherForgetPassword.setText("Forget Password?");
-        teacherForgetPassword.addActionListener(new java.awt.event.ActionListener() {
+        teacherForgetPasswordBtn.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        teacherForgetPasswordBtn.setText("Forget Password?");
+        teacherForgetPasswordBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                teacherForgetPasswordActionPerformed(evt);
+                teacherForgetPasswordBtnActionPerformed(evt);
             }
         });
 
@@ -103,7 +103,7 @@ public class TeacherLoginPanel extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addComponent(teacherSignUpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(38, 38, 38)
-                        .addComponent(teacherForgetPassword, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(teacherForgetPasswordBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(40, 40, 40))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -136,7 +136,7 @@ public class TeacherLoginPanel extends javax.swing.JFrame {
                 .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(39, 39, 39)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(teacherForgetPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(teacherForgetPasswordBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(teacherSignUpBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27))
         );
@@ -173,14 +173,14 @@ public class TeacherLoginPanel extends javax.swing.JFrame {
         dispose();       // Close current frame
     }//GEN-LAST:event_teacherSignUpBtnActionPerformed
 
-    private void teacherForgetPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teacherForgetPasswordActionPerformed
+    private void teacherForgetPasswordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teacherForgetPasswordBtnActionPerformed
         // TODO add your handling code here:
         // Open TeacherForgotPassword
         TeacherForgotPassword tfp = new TeacherForgotPassword();
         tfp.show();       // Display TeacherForgotPassword here
         
         dispose();        // Close current frame
-    }//GEN-LAST:event_teacherForgetPasswordActionPerformed
+    }//GEN-LAST:event_teacherForgetPasswordBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -227,7 +227,7 @@ public class TeacherLoginPanel extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JButton loginBtn;
-    private javax.swing.JButton teacherForgetPassword;
+    private javax.swing.JButton teacherForgetPasswordBtn;
     private javax.swing.JButton teacherSignUpBtn;
     // End of variables declaration//GEN-END:variables
 }
