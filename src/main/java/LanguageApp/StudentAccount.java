@@ -7,7 +7,7 @@ package LanguageApp;
 
 /**
  *
- * @author nugge
+ * @author Eugenie Ahangama(w1786638)
  */
 public class StudentAccount extends javax.swing.JFrame {
 
