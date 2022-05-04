@@ -99,7 +99,7 @@
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="teacherMenuBtn" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -115,8 +115,8 @@
                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jComboBox2" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
-                      <Component id="teacherMenuBtn" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                       <Component id="studentMenuBtn" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="teacherMenuBtn" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jLabel3" min="-2" pref="29" max="-2" attributes="0"/>
