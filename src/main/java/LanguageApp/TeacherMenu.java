@@ -37,6 +37,7 @@ public class TeacherMenu extends javax.swing.JFrame {
         teacherAccountBtn = new javax.swing.JButton();
         viewStudentTeacherPairStatsBtn = new javax.swing.JButton();
         viewStudentStudentPairStatsBtn = new javax.swing.JButton();
+        logOutBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -94,6 +95,14 @@ public class TeacherMenu extends javax.swing.JFrame {
             }
         });
 
+        logOutBtn.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        logOutBtn.setText("Log Out");
+        logOutBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logOutBtnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -115,6 +124,10 @@ public class TeacherMenu extends javax.swing.JFrame {
                             .addComponent(teacherAccountBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(viewStudentStudentPairStatsBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(48, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(logOutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(94, 94, 94))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -132,12 +145,14 @@ public class TeacherMenu extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(teacherStatisticsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(viewStudentStudentPairStatsBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+                .addComponent(viewStudentStudentPairStatsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(teacherAccountBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33))
+                .addGap(18, 18, 18)
+                .addComponent(logOutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -199,6 +214,15 @@ public class TeacherMenu extends javax.swing.JFrame {
         dispose();          // Close current form
     }//GEN-LAST:event_viewStudentStudentPairStatsBtnActionPerformed
 
+    private void logOutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logOutBtnActionPerformed
+        // TODO add your handling code here:
+        // Open StudentTeacherSwitch here
+        StudentTeacherSwitch sts = new StudentTeacherSwitch();
+        sts.show();         // Display StudentTeacherSwitch here
+        
+        dispose();          // Close current form, Student user is logged out
+    }//GEN-LAST:event_logOutBtnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -240,6 +264,7 @@ public class TeacherMenu extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton logOutBtn;
     private javax.swing.JButton teacherAccountBtn;
     private javax.swing.JButton teacherStatisticsBtn;
     private javax.swing.JButton viewStudentStatsBtn;
